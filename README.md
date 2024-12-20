@@ -1,1 +1,7 @@
-## CPPReference Search
+# CPPReference Search
+
+## Плагин "cppreference Search" позволяет проще и быстрее искать нужную информацию на cppreference.com.
+
+Функционал: выделяя текст и нажимая клавиши ctrl+alt+c (mac: shift+cmd+c), открывается новая вкладка браузера со страничкой поиска выделенного текста на cppreference.com.
+
+сделала: *Ткаченко Лиза М3106*
