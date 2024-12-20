@@ -1,0 +1,52 @@
+{
+  "name": "cppreference-search",
+  "displayName": "cppreference-search",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:cppreference-search.cppreferncesearch"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "cppreference-search.cppreferncesearch",
+        "title": "Search in cppreference"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "cppreference-search.cppreferncesearch",
+        "key": "ctrl+alt+c",
+        "mac": "shift+cmd+c"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.96.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1",
+    "eslint": "^9.16.0"
+  },
+  "dependencies": {
+    "open": "^10.1.0"
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "jasmine": true
+  }
+}
